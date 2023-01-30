@@ -39,7 +39,7 @@ public class MovieService {
        return movieRepository.getMoviesByDirectorName(name) ;
     }
     // list of all movie added
-    public  List<Movie>  findAllMovies(){
+    public  List<String>  findAllMovies(){
          return movieRepository.findAllMovies() ;
     }
     // delete director and its movie
