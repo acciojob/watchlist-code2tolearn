@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-
 public class MovieController {
     @Autowired
     MovieService movieService ;
@@ -63,5 +62,4 @@ public class MovieController {
     public  ResponseEntity<String> deleteAllDirectors(){
       return new ResponseEntity<>(movieService.deleteAllDirectors() , HttpStatus.ACCEPTED) ;
     }
-
 }

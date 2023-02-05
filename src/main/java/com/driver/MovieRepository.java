@@ -44,8 +44,8 @@ public class MovieRepository {
     public void addMovieDirectorPair(String movie , String director) {
         List<String> currentmovies = new ArrayList<>();
         if (moviedb.containsKey(movie) && directordb.containsKey(director)) {
-           moviedb.put(movie , moviedb.get(movie)) ;
-           directordb.put(director, directordb.get(director)) ;
+           //moviedb.put(movie , moviedb.get(movie)) ;
+          // directordb.put(director, directordb.get(director)) ;
            if(movieDirdb.containsKey(director))
            {
                currentmovies = movieDirdb.get(director) ;
